@@ -1,38 +1,41 @@
-import React from 'react'
-import Button from './Button'
+import React from "react";
+import Button from "./Button";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col
-    gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
+    <section
+      className="max-container padding-container flex flex-col
+    gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row"
+    >
       <div className="hero-map" />
 
-        <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
-
+      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <h1 className="bold-52 lg:bold-88">
           Control your online traffic with a virtual waiting room
         </h1>
 
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
-        We want to be a part of each of your endeavors in managing online traffic seamlessly. With the antrein application, we can help you optimize your online operations and ensure customer satisfaction, all within a single app
+          We want to be a part of each of your endeavors in managing online
+          traffic seamlessly. With the antrein application, we can help you
+          optimize your online operations and ensure customer satisfaction, all
+          within a single app
         </p>
 
         <div className="my-11 flex w-full gap-3 sm:flex-row">
-            <Button 
-              type="button" 
-              title="Register Now"
-              variant="btn_orange" 
-            />
-              <Button 
-              type="button" 
-              title="How we work?"
-              icon="/play.svg"
-              variant="btn_white_text" 
-            />
+          <Link href="https://antrein.com/register">
+            <Button type="button" title="Register Now" variant="btn_orange" />
+          </Link>
+          <Button
+            type="button"
+            title="How we work?"
+            icon="/play.svg"
+            variant="btn_white_text"
+          />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
