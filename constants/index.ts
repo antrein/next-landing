@@ -2,9 +2,9 @@
 export const NAV_LINKS = [
     // { href: '/', key: 'home', label: 'Home' },
     { href: '/', key: 'how_antrein_work', label: 'How Antrein Work?' },
-    { href: 'features', key: 'Features', label: 'Features' },
+    { href: '#features', key: 'Features', label: 'Features' },
     // { href: '/', key: 'pricing ', label: 'Pricing ' },
-    { href: 'footer', key: 'contact_us', label: 'Contact Us' },
+    { href: '#footer', key: 'contact_us', label: 'Contact Us' },
   ];
   
   
