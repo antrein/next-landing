@@ -23,7 +23,7 @@ const Navbar = () => {
       </ul>
 
       <div className="lg:flexCenter hidden">
-        <Link href="https://antrein.com/login">
+        <Link href="https://dashboard.antrein.com/login">
           <Button
             type="button"
             title="Log In"
