@@ -13,7 +13,7 @@ const GetApp = () => {
           </h2>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row items-center">
             <div className="w-full">
-              <Link href="https://dashboard.antrein.com/register">
+              <Link href="https://dashboard.antrein5.cloud/register">
                 <Button
                   type="button"
                   title="Register"
@@ -24,7 +24,7 @@ const GetApp = () => {
               </Link>
             </div>
             <div className="w-full">
-              <Link href="https://dashboard.antrein.com/login">
+              <Link href="https://dashboard.antrein5.cloud/login">
                 <Button
                   type="button"
                   title="Login"

@@ -23,7 +23,7 @@ const Hero = () => {
         </p>
 
         <div className="my-11 flex w-full gap-3 sm:flex-row">
-          <Link href="https://dashboard.antrein.com/register">
+          <Link href="https://dashboard.antrein5.cloud/register">
             <Button type="button" title="Register Now" variant="btn_orange" />
           </Link>
           <Button
