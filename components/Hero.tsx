@@ -3,6 +3,8 @@ import Button from "./Button";
 import Link from "next/link";
 
 const Hero = () => {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   return (
     <section
       className="max-container padding-container flex flex-col
@@ -23,7 +25,7 @@ const Hero = () => {
         </p>
 
         <div className="my-11 flex w-full gap-3 sm:flex-row">
-          <Link href="https://dashboard.antrein.com/register">
+          <Link href={`https://dashboard.${baseUrl}/register`}>
             <Button type="button" title="Register Now" variant="btn_orange" />
           </Link>
           <Button

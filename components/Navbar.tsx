@@ -4,6 +4,8 @@ import Link from "next/link";
 import Button from "./Button";
 
 const Navbar = () => {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
@@ -23,7 +25,7 @@ const Navbar = () => {
       </ul>
 
       <div className="lg:flexCenter hidden">
-        <Link href="https://dashboard.antrein.com/login">
+        <Link href={`https://dashboard.${baseUrl}/login`}>
           <Button
             type="button"
             title="Log In"
