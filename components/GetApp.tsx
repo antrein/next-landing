@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const GetApp = () => {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   return (
     <section className="flexCenter w-full flex-col pb-[100px]">
       <div className="get-app">
@@ -13,7 +15,7 @@ const GetApp = () => {
           </h2>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row items-center">
             <div className="w-full">
-              <Link href="https://dashboard.antrein.com/register">
+              <Link href={`https://dashboard.${baseUrl}/register`}>
                 <Button
                   type="button"
                   title="Register"
@@ -24,7 +26,7 @@ const GetApp = () => {
               </Link>
             </div>
             <div className="w-full">
-              <Link href="https://dashboard.antrein.com/login">
+              <Link href={`https://dashboard.${baseUrl}/login`}>
                 <Button
                   type="button"
                   title="Login"
