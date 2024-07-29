@@ -52,7 +52,7 @@ export const NAV_LINKS = [
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Admin Officer', value: '6969-6969' },
+      { label: 'Admin Officer', value: '(+62)-812-6293-7269' },
       { label: 'Email Officer', value: 'antrein@gmail.com' },
     ],
   };
